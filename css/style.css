@@ -95,9 +95,6 @@
     }
 }
 
-.foto:nth-child(1){
-    
-}
 .foto:nth-child(2){
     animation-delay: 5s;
 }
