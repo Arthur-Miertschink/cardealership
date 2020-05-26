@@ -10,15 +10,18 @@ h1, h2, h3, h4, p, li, ul, a, button{
 #navbar{
     position: fixed;
     width: 100%;
-    
-    
+    background-color:grey;    
+    margin-top: -8px;
+    margin-left: -8px;
+    height: 50px;
 }
 
 .menutop{
     font-size: 25px;
-    margin-left: 200px;
     text-align: center;
     align-items: center;
+    color: white;
+    
 }
 
 .body{
@@ -30,6 +33,9 @@ h1, h2, h3, h4, p, li, ul, a, button{
 #texto{
     width: 250px;    
     float: right;
+    position: absolute;
+    top: 15%;
+    left: 80%;
     
 }
 
@@ -39,11 +45,15 @@ h1, h2, h3, h4, p, li, ul, a, button{
 
 .btnsrch{
     width: 10px;
-    height: 10px;
+    height: 12px;
     background-color: grey;
     padding: 5px 10px;
     cursor: pointer;
     float: right;
+    position: absolute;
+    left: 97%;
+    top: 15%;
+    margin-left: -9px;
 
     
 }
@@ -57,7 +67,7 @@ h1, h2, h3, h4, p, li, ul, a, button{
 }
 
 .mtbtn:hover{
-    background-color: gray;
+    color: black;
 }
 
 /* Slide show de Imagens */
@@ -73,6 +83,7 @@ h1, h2, h3, h4, p, li, ul, a, button{
     justify-content: center;
     position: relative;
     display: flex;
+    z-index: -1;
     
 }
 
@@ -126,8 +137,9 @@ h1, h2, h3, h4, p, li, ul, a, button{
 
 #selecao{
     display: grid;
-    position: relative;
-    margin-left: 50px;
+    position: absolute;
+    left: 5%;
+    
 }
 
 
@@ -148,11 +160,33 @@ h1, h2, h3, h4, p, li, ul, a, button{
 /* Botão para ver estoque completo */
 
 .btncheck{
-    background-color: black;
+    background-color: grey;
     color: white;
     text-align: center;
     width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 125%;
 }
+
+.btncheck:hover{
+    background-color: black;
+    
+}
+
+/* Rodapé home */
+.rodapehome{
+    position: absolute;
+    top: 130%;
+    background-color:black;
+    width: 100%;
+    margin-left: -10px;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+
 
 /* Página sobre a empresa */
 
@@ -182,6 +216,17 @@ margin-top: 50px;
 
 #visao{
     width: 40%;
+}
+
+.rodapesobre{
+    position: absolute;
+    top: 110%;
+    background-color:black;
+    width: 100%;
+    margin-left: -10px;
+    height: 100px;
+    color: white;
+    text-align: center;
 }
 
 /* Página de contato */
@@ -272,3 +317,37 @@ margin-top: 50px;
     left: 80%;
     top: 50%;
 }
+
+a:link{
+    text-decoration: none;
+}
+
+.redesociais{
+    color: black;
+}
+
+.msgbtn:hover{
+    background-color: grey;
+    border-color: black;
+}
+
+/* Rodapé da Página */
+
+.rodape{
+    position: absolute;
+    top: 90%;
+    background-color:black;
+    width: 100%;
+    margin-left: -10px;
+    height: 100px;
+    color: white;
+    text-align: center;
+}  
+
+.irodape{
+    color: white;
+    margin-top: 10px;
+    
+}
+
+
