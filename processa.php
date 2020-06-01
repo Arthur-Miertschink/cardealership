@@ -31,7 +31,7 @@
     $email->addContent("text/plain", "Olá pessoal da burn tires!, <br><br>Nova mensagem de contato<br><br>
     nome: $nome<br>Email: $mail<br>Telefone: $telefone<br> Mensagem: $mensagem");
 
-    $sendgrid = new \SendGrid(getenv('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'));
+    $sendgrid = new \SendGrid(getenv('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'));
     try {
         $response = $sendgrid->send($email);
         print $response->statusCode() . "\n";

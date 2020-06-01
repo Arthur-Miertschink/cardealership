@@ -12,4 +12,8 @@ function contato(){
     window.location.href = "https://localhost/cardealership/contato.html";
 }
 
+function estoque(){
+    window.location.href = "https://localhost/cardealership/estoque.html";
+}
+
 

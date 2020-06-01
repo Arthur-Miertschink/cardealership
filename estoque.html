@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Veículos</title>
+</head>
+<body class="body">
+
+    <div id="navbar">
+        <div>
+            <form class="pesquisa">
+                <img src="./images/lupa.png" class="btnsrch">
+                <input type="search" id="texto" placeholder="pesquise por marca, modelo, ano, etc...">
+            </form>
+        </div>
+
+        <div class="menutop" >
+            <a onclick="home()" class="mtbtn" id="menubutton">Home</a>
+            <a class="mtbtn"onclick="estoque()" >Nosso Estoque</a>
+            <a class="mtbtn" onclick="sobre()" >Quem Somos</a>
+            <a class="mtbtn" onclick="contato()" >Contato</a>
+        </div>
+
+    </div>
+
+    <div id="filtrobusca">
+        <form>
+            <select name="marca" class="filtro">
+                <option value="">Marca</option>
+
+            </select>
+            <select name="precomin" class="filtro">
+                <option value="">Preço Mín.</option>
+
+            </select>
+            <select name="precomax" class="filtro">
+                <option value="">Preço Máx.</option>
+
+            </select>
+            <select name="anode" class="filtro">
+                <option value="">Ano de</option>
+
+            </select>
+            <select name="anoate" class="filtro">
+                <option value="">Ano Até</option>
+
+            </select>
+
+            <input type="submit" name="submit" value="Buscar" class="buscar"></input>
+            
+            
+
+        </form>
+
+
+    </div>
+
+    <footer class="rodapeest">
+        <div class="contatoest">
+            <h4>Achou o que procurava?</h4>
+            <p><i class="fa fa-mobile-phone icelest"></i> (27) 99795-6608</p>
+            <p><i class="fa fa-envelope imsgest"></i> burntires.veículos@gmail.com</p>
+        </div>
+        <div class="redesest">
+            <h4>Redes Sociais</h4>
+            <a href="https://www.facebook.com/arthur.miertschink/" target="blank" class="iredeest" ><i class="fa fa-facebook-official" style="font-size:24px"></i> Burn Tires Veículos</a> <br> <br>
+            <a href="https://www.instagram.com/arthur_mk23/" target="blank" class="iredeest"><i class="fa fa-instagram" style="font-size:24px"></i> @burntiresveiculos</a> <br> <br>
+            <a href="https://www.linkedin.com/in/arthur-stuhr-miertschink-91ba531a6/" target="blank" class="iredeest" ><i class="fa fa-linkedin-square" style="font-size:24px"></i> Burn Tires Veículos</a>
+
+        </div>
+        <div id="autor">
+            <p>Powered by Arthur Stuhr Miertschink</p>
+        </div>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
