@@ -16,9 +16,7 @@ function estoque(){
     window.location.href = "https://localhost/cardealership/estoque.html";
 }
 
-function carro(){
-  window.location.href = "https://localhost/cardealership/carros/civic_touring_2017.html"
-}
+
 
 // funcao para fazer a galeria funcionar
 
