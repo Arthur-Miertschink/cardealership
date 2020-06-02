@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
 
-h1, h2, h3, h4, p, li, ul, a, button, input, select{
+h1, h2, h3, h4, h5, p, li, ul, a, button, input, select{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -399,6 +399,10 @@ a:link{
     font-size: 20px;
 }
 
+.imgestoque:hover{
+    opacity: 0.7;
+}
+
 .redesest{
     position: absolute;
     left: 85%;
@@ -488,3 +492,243 @@ a:link{
     width: 275px;
 
 }
+
+/* Página do carro */
+
+/* Botão para voltar ao estoque */
+#botaovoltarest{
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+}
+
+.backest{
+    background-color: black;
+    color: white;
+    width: 800px;
+    
+}
+/* Galeria de Imagens */
+
+
+
+/* Conteiner onde ficam as imagens */
+.gallery-container {
+    width: 90%;
+    position: absolute;
+    margin: 0 5%;
+    background: #333;
+    padding: 2px;
+    z-index: -1;
+    top: 15%;
+  }
+    @media (min-width: 480px) {
+        .gallery-container {
+          width: 800px;
+          margin: auto;
+        }
+    }
+  
+  /* Esconder as imagens */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Botões*/
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  /* Posição do botão da direita */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Efeito ao passar o mouse no botão */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Enquadramento da imagem */
+
+  .imgslide {
+    width: 100%;
+  }
+  
+  /* Numeracao indicando em qual imagem estamos e quantas tem */
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  @media (max-width: 768px) {
+    .numbertext {
+      top: 15px;
+    }
+  }
+  
+  /* Animação */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* Informações do carro */
+
+  #infocarro{
+      position: absolute;
+      left: 55%;
+      top: 11%;
+      z-index: -1;
+
+  }
+ /* Contato da pagina do carro */
+
+  #contatocarro{
+    width: 500px;
+    height: 300px;
+    border: black;
+    border-style: solid;
+    float: right;
+    position: absolute;
+    top: 140%;
+    border-radius: 10px;
+    text-align: center;
+    z-index: -1;
+  }
+
+  .msgbtncarro{
+      position: absolute;
+      background-color: black;
+      color: white;
+      top: 110%;
+      right: 0%;
+      width: 500px;
+      border-radius: 5px;
+      z-index: -1;
+  }
+
+  #telefonecarro{
+      position: absolute;
+      top: 400%;
+      z-index: -1;
+  }
+
+  .hrcarro{
+      width: 500px;
+      z-index: -1;
+  }
+
+    /* Resumo das características do carro */
+  #caracteristicascarro{
+      position: absolute;
+      display: grid;
+      display: inline-flex;
+      top: 506%;
+      right: 150%;
+      
+  }
+
+  .ajustescarro{
+      margin-left: 20px;
+      border-left: solid;
+      border-color: rgb(161, 158, 158);
+      padding-left: 10px;
+    }
+
+    .placa{
+        width: 60px;
+    }
+
+    .hrc{
+        position: absolute;
+        width: 1000px;
+        top: 500%;
+        right: 70%;
+    }
+    
+    #resumo{
+        position: absolute;
+        top: 470%;
+        right: 247%;
+    }
+
+    /* Detalhes do carro */
+
+    .hrdetalhe{
+      position: absolute;  
+      top: 575%;
+      width: 263%;
+      right: 0%;
+    }
+
+    #detalhescarro{
+        position: absolute;
+        top: 580%;
+        width: 100%;
+        right: 160%;
+        display: inline-flex;
+    }
+
+    .dcarro{
+        position: absolute;
+        width: 500px;
+        height: 200px;
+        
+
+    }
+
+    .opcionais{
+        position: absolute;
+        left: 110%;
+        height: 200px;
+        width: 500px;
+        border-left: solid;
+        border-color: rgb(161, 158, 158);
+        padding-left: 50px;
+
+
+    }
+
+    /*  Rodapé da página do carro  */
+
+    .rodapecarro{
+        position: absolute;
+        top: 750%;
+        background-color:black;
+        height: 100px;
+        margin-left: -6%;
+        color: white;
+        width: 300%;
+        text-align: center;  
+        right: -31%;
+        
+    }
+ 
