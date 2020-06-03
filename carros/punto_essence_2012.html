@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Carro</title>
+</head>
+<body class="body">
+    <div id="navbar">
+        <div>
+            <form class="pesquisa">
+                <img src="../images/lupa.png" class="btnsrch">
+                <input type="search" id="texto" placeholder="pesquise por marca, modelo, ano, etc...">
+            </form>
+        </div>
+
+        <div class="menutop" >
+            <a onclick="home()" class="mtbtn" id="menubutton">Home</a>
+            <a class="mtbtn"onclick="estoque()" >Nosso Estoque</a>
+            <a class="mtbtn" onclick="sobre()" >Quem Somos</a>
+            <a class="mtbtn" onclick="contato()" >Contato</a>
+        </div>
+
+    </div>
+
+    <div id="botaovoltarest">
+        <button onclick="estoque()" class="backest"><i class="fa fa-arrow-left"></i> Voltar para o estoque</button>
+    </div>
+
+    <div id="galeriacarro">
+            <section class="container gallery-container">
+
+                <!--Slides-->
+                <div class="mySlides fade"> <!-- 01 -->
+                    <div class="numbertext">01 / 05</div>
+                    <img class="imgslide" src="../images/carro14/puntofrente.jpg" alt="punto"/>
+                </div>
+
+                <div class="mySlides fade"> <!-- 02 -->
+                    <div class="numbertext">02 / 05</div>
+                    <img class="imgslide" src="../images/carro14/puntointerna.jpg" alt="punto"/>
+                </div>
+
+                <div class="mySlides fade"> <!-- 03 -->
+                    <div class="numbertext">03 / 05</div>
+                    <img class="imgslide" src="../images/carro14/puntolateral.jpg" alt="punto"/>
+                </div>
+
+                <div class="mySlides fade"> <!-- 04 -->
+                    <div class="numbertext">04 / 05</div>
+                    <img class="imgslide" src="../images/carro14/puntomotor.jpg" alt="punto"/>
+                </div>
+
+                <div class="mySlides fade"> <!-- 05 -->
+                    <div class="numbertext">05 / 05</div>
+                    <img class="imgslide" src="../images/carro14/puntotraseira.jpg" alt="punto"/>
+                </div>
+                <!--Final Slides-->
+
+                <!-- Setas de navegação-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+        </div>
+
+        <div id="infocarro">
+            <h1>Fiat - Punto - 2011/2012</h1>
+            <h2>R$ 23.000</h2>
+
+            <div id="contatocarro">
+                <h3 class="envmsg">Faça sua proposta</h3>
+                <form method="POST" class="mensagem" action="processa.php">
+                    <input type="text" placeholder="Digite seu nome" class="txtmsg" name="nome" > 
+                    <input type="email" placeholder="Digite seu email" class="txtmsg" name="email"> 
+                    <input type="text" placeholder="Digite seu telefone" class="txtmsg" name="telefone"> 
+                    <input type="text" placeholder="Qual é o melhor horário para contato?" class="txtmsg" name="horario">
+                    <input type="textarea" placeholder="Digite sua Mensagem" class="txtmsg" name="mensagem">
+                    
+                    <input type="submit" value="ENVIAR PROPOSTA" class="msgbtncarro"></input>
+                </form>
+           
+        </div>
+        <hr>
+
+        <div id="telefonecarro">
+            <hr class="hrcarro">
+            <h4>Contato</h4>
+            <p> <i class="fa fa-mobile-phone" style="font-size:36px"></i>   (27) 99795-6608</p>
+            <p><i class='fas fa-map-marker-alt' style='font-size:24px'></i>   Rua Hermann Miertschink, 380</p>
+        </div>
+
+        <hr class="hrcpunto">
+
+        <div id="resumopunto">
+            <h3>Resumo</h3>
+        </div>
+        <div id="caracteristicascarropunto" >
+            <div class="combustivel ">
+                <h5>Combustível</h5>
+                <p>Flex</p>
+            </div>
+
+            <div class="ano ajustescarro">
+                <h5>Ano/Modelo</h5>
+                <p>2011/2012</p>
+            </div>
+
+            <div class="km ajustescarro">
+                <h5>KM</h5>
+                <p>98.374</p>
+            </div>
+
+            <div class="placa ajustescarro">
+                <h5>Placa</h5>
+                <p>I**-***8</p>
+            </div>
+
+            <div class="cor ajustescarro">
+                <h5>Cor</h5>
+                <p>cinza</p>
+            </div>
+
+            <div class="cambio ajustescarro">
+                <h5>Câmbio</h5>
+                <p>Manual</p>
+            </div>
+
+        </div>
+
+        <hr class="hrdetalhepunto">
+        <div id="detalhescarropunto">
+            <div class="dcarro">
+                <h3>Detalhes do carro</h3>
+                <p>Carro possui alguns detalhes estéticos, porém a mecanica está em perfeito estado, recém revisado, km original.</p>
+            </div>
+            <div class="opcionaispunto">
+                <h3>Opcionais do veículo</h3>
+                <ul>
+                    <li>Airbag</li>
+                    <li>ABS</li>
+                    <li>Bancos em couro</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
