@@ -16,6 +16,12 @@ h1, h2, h3, h4, h5, p, li, ul, a, button, input, select{
     height: 50px;
 }
 
+.logo{
+    position: absolute;
+    left: 5%;
+    top: 5px;
+}
+
 .menutop{
     font-size: 25px;
     text-align: center;
@@ -94,6 +100,9 @@ h1, h2, h3, h4, h5, p, li, ul, a, button, input, select{
     animation-name: animacao;
     animation-duration: 20s;
     animation-iteration-count: infinite;
+    height: 350px;
+    width: 85%;
+    
 }
 
 @keyframes animacao{
@@ -115,6 +124,11 @@ h1, h2, h3, h4, h5, p, li, ul, a, button, input, select{
 .foto:nth-child(4){
     animation-delay: 15s;
 }
+.foto:nth-child(5){
+    animation-delay: 20s;
+}
+
+
 
 /* Seção de destaques */
 
@@ -193,9 +207,16 @@ h1, h2, h3, h4, h5, p, li, ul, a, button, input, select{
 
 
 #imgsbr{
-float: right;
-margin-top: 50px;
+position: absolute;
+left: 45%;
 
+
+
+}
+
+.imgloja{
+    width: 800px;
+    height: 350px;
 }
 
 .timissao{
@@ -254,7 +275,7 @@ margin-top: 50px;
 }
 
 .msgbtn{
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 80%;
     border-radius: 10px;
     background-color: black;
@@ -353,20 +374,23 @@ a:link{
 
 /* Página do estoque */
 
-#filtrobusca{
+#tituloestoque{
     position: absolute;
-    top: 12%;
-    left: 23%;
-    border: black;
-    border-style: solid;
-    padding: 5px;
-    z-index: -1 ;
-    
+    left: 42%;
+    top: 5%;
+    z-index: -1;
+}
+
+#mensagemestoque{
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    z-index: -1;
 
 }
 
-.filtro{
-    width: 150px;
+.hestoque{
+    font-weight: normal;
 }
 
 .buscar{
@@ -639,6 +663,7 @@ a:link{
       width: 500px;
       border-radius: 5px;
       z-index: -1;
+      height: 30px;
   }
 
   #telefonecarro{
@@ -650,6 +675,10 @@ a:link{
   .hrcarro{
       width: 500px;
       z-index: -1;
+  }
+
+  .msgbtncarro:hover{
+      background-color: grey;
   }
 
     /* Resumo das características do carro */

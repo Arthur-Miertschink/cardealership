@@ -12,15 +12,10 @@
 <body class="body">
 
     <div id="navbar">
-        <div>
-            <form class="pesquisa">
-                <img src="./images/lupa.png" class="btnsrch">
-                <input type="search" id="texto" placeholder="pesquise por marca, modelo, ano, etc...">
-            </form>
-        </div>
+
 
         <div class="menutop">
-            <a onclick="home()" class="mtbtn">Home</a>
+            <a onclick="home()" class="mtbtn" id="menubutton"><img src="./images/logo2.png" alt="logo" class="logo"></a></img>
             <a class="mtbtn"onclick="estoque()" >Nosso Estoque</a>
             <a class="mtbtn" onclick="sobre()" >Quem Somos</a>
             <a class="mtbtn" onclick="contato()" >Contato</a>
@@ -61,9 +56,10 @@
                     <input type="text" placeholder="Digite seu nome" class="txtmsg" name="nome" > 
                     <input type="email" placeholder="Digite seu email" class="txtmsg" name="email"> 
                     <input type="text" placeholder="Digite seu telefone" class="txtmsg" name="telefone"> 
+                    <input type="text" placeholder="Qual é o melhor horário para contato?" class="txtmsg" name="horario">
                     <input type="textarea" placeholder="Digite sua Mensagem" class="txtmsg" name="mensagem">
                     
-                    <input type="submit" class="msgbtn"></input>
+                    <input type="submit" value="Enviar" class="msgbtn"></input>
                 </form>
                 
             </div>

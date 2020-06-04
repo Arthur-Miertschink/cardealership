@@ -11,15 +11,9 @@
 <body class="body">
 
     <div id="navbar">
-        <div>
-            <form class="pesquisa">
-                <img src="./images/lupa.png" class="btnsrch">
-                <input type="search" id="texto" placeholder="pesquise por marca, modelo, ano, etc...">
-            </form>
-        </div>
 
         <div class="menutop" >
-            <a onclick="home()" class="mtbtn" id="menubutton">Home</a>
+            <a onclick="home()" class="mtbtn" id="menubutton"><img src="./images/logo2.png" alt="logo" class="logo"></a></img>
             <a class="mtbtn"onclick="estoque()" >Nosso Estoque</a>
             <a class="mtbtn" onclick="sobre()" >Quem Somos</a>
             <a class="mtbtn" onclick="contato()" >Contato</a>
@@ -27,45 +21,22 @@
 
     </div>
 
-    <div id="filtrobusca">
-        <form>
-            <select name="marca" class="filtro">
-                <option value="">Marca</option>
-
-            </select>
-            <select name="precomin" class="filtro">
-                <option value="">Preço Mín.</option>
-
-            </select>
-            <select name="precomax" class="filtro">
-                <option value="">Preço Máx.</option>
-
-            </select>
-            <select name="anode" class="filtro">
-                <option value="">Ano de</option>
-
-            </select>
-            <select name="anoate" class="filtro">
-                <option value="">Ano Até</option>
-
-            </select>
-
-            <input type="submit" name="submit" value="Buscar" class="buscar"></input>
-            
-            
-
-        </form>
-
-
+    <div id="tituloestoque">
+        <h1>Nossos Carros</h1>
+        
+    </div>
+    <div id="mensagemestoque">
+        <h4 class="hestoque">Aqui temos ótimas opções para você, que quer realizar seu sonho!</h4>
+        
     </div>
 
     <div id="estoquel1">
         <div class="imgselecao">
             <a href="https://localhost/cardealership/carros/civic_touring_2017.html"><img src="./images/carro1/civicfrente.jpg" alt="civic" class="imgestoque"></a>
-            <a href="https://localhost/cardealership/carros/gol_power_2005.html"></a><img src="./images/carro2/golfrente.jpg" alt="golg3" class="imgestoque"></a>
-            <img src="./images/carro3/vectralateral.jpg" alt="classic" class="imgestoque">
-            <img src="./images/carro4/swfrente.jpg" alt="escapade" class="imgestoque">
-            <img src="./images/carro5/fusionfrente.jpg" alt="fusion" class="imgestoque">
+            <a href="https://localhost/cardealership/carros/gol_power_2005.html"><img src="./images/carro2/golfrente.jpg" alt="golg3" class="imgestoque"></a>
+            <a href="https://localhost/cardealership/carros/vectra_cd_2003.html"><img src="./images/carro3/vectralateral.jpg" alt="vectra" class="imgestoque"></a>
+            <a href="https://localhost/cardealership/carros/206_sw_2006.html"><img src="./images/carro4/swfrente.jpg" alt="escapade" class="imgestoque"></a>
+            <a href="https://localhost/cardealership/carros/fusion_v6_2012.html"><img src="./images/carro5/fusionfrente.jpg" alt="fusion" class="imgestoque"></a>
         </div> 
 
         <div class="txtestoque">
@@ -106,11 +77,11 @@
         
     <div id="estoquel2">
         <div class="imgselecao">
-            <img src="./images/carro6/kafrente.jpg" alt="civic" class="imgestoque">
-            <img src="./images/carro7/i30frente.jpg" alt="i30" class="imgestoque">
-            <img src="./images/carro8/hybridfrente.jpg" alt="civic" class="imgestoque">
-            <img src="./images/carro9/jettafrente.jpg" alt="civic" class="imgestoque">
-            <img src="./images/carro10/prismafrente.jpg" alt="civic" class="imgestoque">
+           <a href="https://localhost/cardealership/carros/ka_1.0_2011.html"><img src="./images/carro6/kafrente.jpg" alt="ka" class="imgestoque"></a>
+           <a href="https://localhost/cardealership/carros/i30_2.0_2012.html"><img src="./images/carro7/i30frente.jpg" alt="i30" class="imgestoque"></a>
+           <a href="https://localhost/cardealership/carros/fusion_hybrid_2014.html"><img src="./images/carro8/hybridfrente.jpg" alt="fusion" class="imgestoque"></a>
+           <a href="https://localhost/cardealership/carros/jetta_highline_2013.html"><img src="./images/carro9/jettafrente.jpg" alt="jetta" class="imgestoque"></a>
+           <a href="https://localhost/cardealership/carros/prisma_ltz_2015.html"><img src="./images/carro10/prismafrente.jpg" alt="prisma" class="imgestoque"></a>
         </div> 
 
         <div class="txtestoque">
@@ -148,11 +119,11 @@
 
         <div id="estoquel3">
             <div class="imgselecao">
-                <img src="./images/carro11/cobaltlateral.jpg" alt="ka" class="imgestoque">
-                <img src="./images/carro12/dusterfrente.jpg" alt="civic" class="imgestoque">
-                <img src="./images/carro13/fiestafrente.jpg" alt="civic" class="imgestoque">
-                <img src="./images/carro14/puntofrente.jpg" alt="civic" class="imgestoque">
-                <img src="./images/carro15/sanderofrente.jpg" alt="civic" class="imgestoque">
+                <a href="https://localhost/cardealership/carros/cobalt_elite_2017.html"><img src="./images/carro11/cobaltlateral.jpg" alt="ka" class="imgestoque"></a>
+                <a href="https://localhost/cardealership/carros/duster_techroad_2014.html"><img src="./images/carro12/dusterfrente.jpg" alt="civic" class="imgestoque"></a>
+                <a href="https://localhost/cardealership/carros/fiesta_2005.html"><img src="./images/carro13/fiestafrente.jpg" alt="civic" class="imgestoque"></a>
+                <a href="https://localhost/cardealership/carros/punto_essence_2012.html"><img src="./images/carro14/puntofrente.jpg" alt="civic" class="imgestoque"></a>
+                <a href="https://localhost/cardealership/carros/sandero_vibe_2010.html"><img src="./images/carro15/sanderofrente.jpg" alt="civic" class="imgestoque"></a>
             </div> 
     
             <div class="txtestoque">
